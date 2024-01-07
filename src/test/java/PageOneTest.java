@@ -39,7 +39,7 @@ import functions.ActionClass;
         }
 
         @Test
-        public void с() throws InterruptedException {
+        public void с()  {
             driver.get("https://harvest-clothing.com.ua/");
             WebDriverWait wait = new WebDriverWait(driver, 10);
             WebElement element3 = driver.findElement(By.xpath("//div[contains(@class, 'idsearch dropdn dropdn_search hide-mobile only-icon')]"));

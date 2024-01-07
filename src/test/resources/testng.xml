@@ -5,6 +5,8 @@
             <class name="ClickerPageTest"/>
             <class name="AutoPageTest"/>
             <class name="PageOneTest"/>
+            <class name="PageTwoTest"/>
+            <class name="PageThreeTest"/>
         </classes>
     </test>
 </suite>

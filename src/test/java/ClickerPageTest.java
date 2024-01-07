@@ -3,16 +3,13 @@ import org.testng.annotations.Test;
 import pages.BasePage;
 
 public class ClickerPageTest extends BaseTest {
-
     @BeforeClass
     public void acceptCookies(){
         clickerPage.openWebsite();
         try {
             clickerPage.acceptCookies();
         }catch (Exception e){
-
         }
-
     }
 
     @Test

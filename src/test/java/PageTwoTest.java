@@ -79,12 +79,13 @@ public class PageTwoTest extends BaseTest{
         waitProduvt.until(ExpectedConditions.titleContains("Рюкзак в літак \"AVIAPACK\" кеш'ю - HARVEST"));
     }
     @Test
-    public void fifth(){
-        WebDriverWait waitLike = new WebDriverWait(driver, 10);
-        WebElement like = waitLike.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='prd-inside']//a[@class='label-wishlist icon-heart js-label-wishlist ']")));
+    public void fifth() throws InterruptedException{
+        Thread.sleep(5000);
+        WebElement like = driver.findElement(By.xpath("//div[@class='prd-grid-wrap']//div[@class='prd prd-has-loader prd-sale prd-new product-grid aos-init aos-animate loaded']//a[@class='label-wishlist icon-heart js-label-wishlist ']"));
         like.click();
         WebElement iconkaLike = driver.findElement(By.xpath("//i[@class='icon icon-heart-1']"));
         iconkaLike.click();
-        waitLike.until(ExpectedConditions.titleContains("Мої закладки"));
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.titleContains("Мої закладки"));
     }
     }

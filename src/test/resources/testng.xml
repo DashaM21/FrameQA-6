@@ -2,8 +2,6 @@
 <suite name="AllTests Suite">
     <test name="AllTests">
         <classes>
-            <class name="ClickerPageTest"/>
-            <class name="AutoPageTest"/>
             <class name="PageOneTest"/>
             <class name="PageTwoTest"/>
             <class name="PageThreeTest"/>

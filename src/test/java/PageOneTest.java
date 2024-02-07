@@ -17,7 +17,7 @@ import functions.ActionClass;
                 policyConfirm.click();
                 wait.until(ExpectedConditions.stalenessOf(policyConfirm));
             } catch (TimeoutException e) {
-                System.out.println("Cookies відсутні. Продовжуєм");
+                System.out.println("Cookies відсутні. Подовжуєм");
             }
         }
 

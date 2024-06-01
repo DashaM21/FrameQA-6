@@ -19,7 +19,7 @@ import functions.ActionClass;
             } catch (TimeoutException e) {
                 System.out.println("Cookies відсутні. Подовжуєм");
             }
-        }
+        }g
 
         @Test
         public void a () {
